@@ -1,0 +1,48 @@
+html 
+    head 
+        title= title 
+        style
+           include ../styles/style.css
+        link(rel="import", href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap" rel="stylesheet">
+    body 
+        navbar.navigation-bar 
+            div.logo
+                img(src="https://cdn.domestika.org/c_fit,dpr_auto,f_auto,t_base_params,w_820/v1593108098/content-items/005/019/347/550_X_370-01-01-original.jpg?1593108098", alt="")
+            div.menu-items
+                ul.list 
+                    li 
+                         a(href='/home') Home 
+                    li 
+                         a(href='/login') Login 
+                    li 
+                         a(href='/signup') signup 
+                    li 
+                         a(href='/contact') Contact 
+        section.display-message 
+            h5= display__message        
+        
+        section.mid-section 
+            div.form
+                form(id="Form" action="", method="post")
+                    #name.label   Name
+                    
+                    input(type="text" name="name" placeholder="Enter your name : " id="input-field")
+                    #pass.label   Password
+                      
+                    input(type="password" name="password" placeholder="Enter your password : " id="input-field")
+                    #mail.label   Email
+                       
+                    input(type="mail" name="mail" placeholder="Enter your email : " id="input-field")
+                    #contact.label Phone
+                    
+                    input(type="phone" name="phone" placeholder="Enter your phone : " id="input-field")
+
+
+                button(type="submit" name="submitted" form="Form")   <h4>Sign Up</h4>
+
+        footer.footer-bar
+            h6 All Copyrights© Reserved with 
+            h6 @Himadri Chakraborty 2021 
