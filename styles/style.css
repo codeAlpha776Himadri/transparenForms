@@ -3,11 +3,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Baloo Tamma 2', cursive;
 }
 
 body::before
 {
-    background: url('https://wallpaperaccess.com/full/1347419.jpg') no-repeat center/cover;
+    background: url('https://images.unsplash.com/photo-1511510946144-6e4849c5a85e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1236&q=80') no-repeat center/cover;
     content: '';
     position: absolute;
     top: 0;
@@ -15,7 +16,7 @@ body::before
     width: 100%;
     height: 108%;
     z-index: -10;
-    opacity: 0.9;
+    filter: blur(4px);
 }
 
 body::after
@@ -44,8 +45,7 @@ body::after
     width: 90vw;
     display: flex;
     margin: 10px auto;
-    border: 2px solid black;
-    background-color: hsl(0deg 0% 0% / 64%);
+    background-color: hsl(0deg 0% 0% / 31%);
     font-family: 'Open Sans', sans-serif;
     border-radius: 10px;
     box-shadow: 3px 2px 5px #705a39;
@@ -118,7 +118,7 @@ body::after
 .navigation-bar .menu-items .list li a 
 {
     text-decoration: none;
-    color: hsl(35deg 100% 72%);
+    color: hsl(14deg 100% 57%);
     font-weight: bold;
     font-family: 'Cabin', sans-serif;
 }
@@ -180,7 +180,7 @@ body::after
 .mid-section-home #welcome-message
 {
     margin: 14px;
-    color: hsl(35deg 78% 67%);
+    color: hsl(14deg 82% 52%);
 }
 
 .mid-section  .form
@@ -197,12 +197,11 @@ body::after
 {
     height: 398px;
     width: 380px;
-    border: 1px solid white;
     background-color: hsl(0deg 0% 0% / 46%);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    animation-name: form-design;
+    /* animation-name: form-design; */
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
@@ -213,21 +212,21 @@ body::after
 {
     0%
     {
-        border: 1px solid rgb(0, 0, 0);
+        box-shadow: 1px 1px 3px white;
     }
     50%
     {
-        border: 1px solid #705a39;
+        box-shadow: 1px 1px 3px white;
     }
     100%
     {
-        border: 1px solid rgb(0, 0, 0);
+        box-shadow: 1px 1px 3px white;
     }
 }
 
 .mid-section  .form form .label
 {
-    color: hsl(35deg 100% 72%);
+    color: hsl(14deg 100% 50%);
     font-family: 'Cabin', sans-serif;
     display: block;
     padding: 10px 30px;
@@ -262,7 +261,7 @@ body::after
     margin-left: 50px;
     background-color: white;
     color: black;
-    border: 1px solid rgb(0, 0, 0);
+    border: none;
     border-radius: 9px;
     box-shadow: 3px 2px 5px #705a39;
     font-size: 16px;
@@ -312,12 +311,15 @@ body::after
     justify-content: center;
     flex-direction: column;
     margin: 28px auto;
-    border: 2px solid black;
     color: white;
-    background-color: hsl(0deg 0% 0% / 64%);
+    background-color: hsl(0deg 0% 0% / 31%);
     font-family: 'Open Sans', sans-serif;
     border-radius: 10px;
     box-shadow: 3px 2px 5px #705a39;
+}
+
+.footer-bar h6{
+    color: hsl(14deg 100% 50%);
 }
 
 .display-message
